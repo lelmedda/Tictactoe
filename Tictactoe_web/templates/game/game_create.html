@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TicTacToe</title>
+</head>
+<style>
+table, th, td {
+  border:1px solid black; width:500px
+}
+</style>
+<body>
+  <h1> </h1>
 
+  <h1>TicTacToe board keys code: </h1>
+    <div class="gameView game">
+      <table>
+        <tr>
+          <td id="1" onmouseover="checkObj(this);" onmouseout="setColor(this);" class="game-item" data-ceil="1">0</td>
+          <td id="2" onmouseover="checkObj(this);" onmouseout="setColor(this);" class="game-item" data-ceil="2">1</td>
+          <td id="4" onmouseover="checkObj(this);" onmouseout="setColor(this);" class="game-item" data-ceil="3">2</td>
+        </tr>
+        <tr>
+          <td id="4" onmouseover="checkObj(this);" onmouseout="setColor(this);" class="game-item" data-ceil="4">4</td>
+          <td id="5" onmouseover="checkObj(this);" onmouseout="setColor(this);" class="game-item" data-ceil="5">5</td>
+          <td id="6" onmouseover="checkObj(this);" onmouseout="setColor(this);" class="game-item" data-ceil="6">6</td>
+        </tr>
+        <tr>
+          <td id="7" onmouseover="checkObj(this);" onmouseout="setColor(this);" class="game-item" data-ceil="7">7</td>
+          <td id="8" onmouseover="checkObj(this);" onmouseout="setColor(this);" class="game-item" data-ceil="8">8</td>
+          <td id="9" onmouseover="checkObj(this);" onmouseout="setColor(this);" class="game-item" data-ceil="9">9</td>
+        </tr>
+      </table>
+    </div>
+
+  </table>
+  <form action="pk" method="get">
+      <label for="pk">Position: </label>
+      <input id="move" type="text" name="move" value="{{ move }}">
+      <input type="submit" value="OK">
+  </form>
+
+    <button type="submit" value='Submit'>Submit</button>
+
+</body>
+</html>
