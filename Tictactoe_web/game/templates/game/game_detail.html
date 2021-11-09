@@ -12,26 +12,6 @@ table, th, td {
 <body>
   <h1>Click on one of the TicTacToe board keys to make a move: </h1>
 
-  <div class="gameView game">
-    <table>
-      <tr>
-        <td id="1" onmouseover="checkObj(this);" onmouseout="setColor(this);" class="game-item" data-ceil="1"></td>
-        <td id="2" onmouseover="checkObj(this);" onmouseout="setColor(this);" class="game-item" data-ceil="2"></td>
-        <td id="4" onmouseover="checkObj(this);" onmouseout="setColor(this);" class="game-item" data-ceil="3"></td>
-      </tr>
-      <tr>
-        <td id="4" onmouseover="checkObj(this);" onmouseout="setColor(this);" class="game-item" data-ceil="4"></td>
-        <td id="5" onmouseover="checkObj(this);" onmouseout="setColor(this);" class="game-item" data-ceil="5"></td>
-        <td id="6" onmouseover="checkObj(this);" onmouseout="setColor(this);" class="game-item" data-ceil="6"></td>
-      </tr>
-      <tr>
-        <td id="7" onmouseover="checkObj(this);" onmouseout="setColor(this);" class="game-item" data-ceil="7"></td>
-        <td id="8" onmouseover="checkObj(this);" onmouseout="setColor(this);" class="game-item" data-ceil="8"></td>
-        <td id="9" onmouseover="checkObj(this);" onmouseout="setColor(this);" class="game-item" data-ceil="9"></td>
-      </tr>
-    </table>
-  </div>
-
   <h1>TicTacToe board keys code: </h1>
     <div class="gameView game">
       <table>
@@ -56,7 +36,7 @@ table, th, td {
   </table>
   <form action="move" method="post">
       <label for="move">Position: </label>
-      <input id="move" type="text" name="move" value="{{ self.move }}">
+      <input id="move" type="text" name="move" value="{{ move }}">
       <input type="submit" value="OK">
   </form>
 
